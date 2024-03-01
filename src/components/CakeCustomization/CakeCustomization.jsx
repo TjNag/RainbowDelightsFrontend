@@ -129,7 +129,7 @@ function CakeCustomization() {
     placeholder="Need something more?"
     value={additionalNotes}
     onChange={e => setAdditionalNotes(e.target.value)}
-    className="w-full p-2 border border-gray-300 rounded"
+    className="w-full p-2 border-2 ipcolor border-color rounded-lg placeholder-pink-900"
     rows="4"
   />
 </div>
@@ -205,13 +205,13 @@ function CakeCustomization() {
   value={deliveryDate}
   onChange={e => setDeliveryDate(e.target.value)}
   min={new Date().toISOString().split('T')[0]}
-  className="border border-gray-300 rounded py-1 px-5"
+  className="border-2  ipcolor border-color border-color rounded py-1 px-5"
 />
 
     <select
   value={deliveryTime}
   onChange={e => setDeliveryTime(e.target.value)}
-  className="border border-gray-300 rounded py-1 px-5"
+  className="border-2 ipcolor border-color  rounded py-1 px-5"
 >
   <option value="Anytime">Anytime</option>
   <option value="10:00">10:00 am</option>

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+.logo-font {
+    font-family: 'Italianno', cursive;
+  }
 .home-button{
     border: 2px solid black;
 }

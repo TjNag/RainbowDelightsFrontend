@@ -14,12 +14,14 @@ import sliderImg from '../../assets/cake2.png';
 export default function App() {
   const slides = [
     {
-      heading: "Lorem ipsum",
-      subHeading1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque suscipit illum aut maxime ut!"
+      heading: "Our Customers Speak Out!",
+      subHeading1: '"Absolutely divine! Every bite of their pastries is like a taste of heaven. The attention to detail and freshness in their products really sets them apart. Highly recommended!"',
+      name:"Emily"
     },
     {
-      heading: 'dolor sit.',
-      subHeading1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque suscipit illum aut maxime ut!"
+      heading: 'Our Customers Speak Out!',
+      subHeading1: '"Hands down the best bakery in town! I\'ve tried many others, but none come close to the quality and flavor they offer here."',
+      name:'Mark'
     },
     // Add more slide data here
   ];
@@ -38,6 +40,7 @@ export default function App() {
             <div className="slide-text">
               <h2 className="slide-heading text-4xl mb-5 font-extrabold">{slide.heading}</h2>
               <h3 className="slide-subheading text-3xl leading-10 font-medium">{slide.subHeading1}</h3>
+              <h3 className='text-right'>-{slide.name}</h3>
             </div>
           </div>
         </SwiperSlide>

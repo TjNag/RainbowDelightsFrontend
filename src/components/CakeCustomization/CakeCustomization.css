@@ -6,3 +6,9 @@
   background: #da8499 !important;
   border: 2px solid #742437 !important;
 }
+.border-color{
+  border-color: #742437;
+}
+.ipcolor{
+  background-color: #FFF8E3;
+}
