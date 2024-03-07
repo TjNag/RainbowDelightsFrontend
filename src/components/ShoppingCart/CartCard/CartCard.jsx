@@ -2,24 +2,25 @@
 import React, { useState } from 'react';
 import './CartCard.css';
 
-const CartCard = ({ product }) => {
+const CartCard = ({ product,quantity,incrementQuantity,
+  decrementQuantity,subtotal}) => {
   // Set initial state for quantity from the product prop
-  const [quantity, setQuantity] = useState(product.quantity);
+  // const [quantity, setQuantity] = useState(product.quantity);
 
-  // Function to handle incrementing the quantity
-  const incrementQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
-  };
+  // // Function to handle incrementing the quantity
+  // const incrementQuantity = () => {
+  //   setQuantity(prevQuantity => prevQuantity + 1);
+  // };
 
-  // Function to handle decrementing the quantity
-  const decrementQuantity = () => {
-    if (quantity > 1) { // Prevents quantity from going below 1
-      setQuantity(prevQuantity => prevQuantity - 1);
-    }
-  };
+  // // Function to handle decrementing the quantity
+  // const decrementQuantity = () => {
+  //   if (quantity > 1) { // Prevents quantity from going below 1
+  //     setQuantity(prevQuantity => prevQuantity - 1);
+  //   }
+  // };
 
-  // Calculate the subtotal
-  const subtotal = quantity * product.price;
+  // // Calculate the subtotal
+  // const subtotal = quantity * product.price;
 
   return (
     <div className="flex justify-between items-center bg-card-color p-4 shadow rounded-lg mb-3">
@@ -47,6 +48,7 @@ const CartCard = ({ product }) => {
 
       {/* Remove Button */}
       <button className="text-2xl text-red-500 hover:text-red-700">&times;</button>
+      
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card/Card';
 import './Products.css';
-// import ProductsData from '../../ProductsData';
+import ProductsData from '../../ProductsData';
 import ModalPopup from '../ModalPopup/ModalPopup';
 import Axios  from '../../utils/Axios';
 
